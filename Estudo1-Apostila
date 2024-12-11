@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+	int a=0, r=0, alun=1, resultado;
+	
+	while (alun<=10){
+		printf("Insira 1 para aprovado e 2 para reprovado: ");
+		scanf("%d", &resultado);
+		
+		if(resultado==1){
+			a++;
+		} 
+		else{
+			r++;
+		}
+		
+		alun++;
+	}
+	
+	printf("Aprovados %d\n", a);
+    printf("Reprovados %d\n", r);
+    
+    if(a>8){
+    printf("Bonus ao instrutor!");
+	}
+	
+	else{
+		printf("Bonus nao disponivel");
+	}
+	
+}
